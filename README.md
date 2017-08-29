@@ -60,8 +60,8 @@ freelance full stack software development.
 
 #### Pin Hsiao & Associates, LLC DBA: Antonina's Artisan Bakery
 Aug 25th, 2014 - Apr 1st, 2017  
-reason for leaving: I left in April to immerse myself in software development at code fellows.
-title: Administration General Manager
-I created and maintained the intranet. developed or improved processes and wrote Standard Operating Procedures. Advised Administrative staff. Audited staff and department performance. Facilities contracts.   
-past duties: Marketing Specialist
-as the marketing specialist, I designed and monitored the company website. designed packaging. Site Analytics, SEO, Social Media Marketing.
+reason for leaving: I left in April to immerse myself in software development at code fellows.  
+title: Administration General Manager  
+I created and maintained the intranet. developed or improved processes and wrote Standard Operating Procedures. Advised Administrative staff. Audited staff and department performance. Facilities contracts.     
+past duties: Marketing Specialist  
+as the marketing specialist, I designed and monitored the company website. designed packaging. Site Analytics, SEO, Social Media Marketing.  
