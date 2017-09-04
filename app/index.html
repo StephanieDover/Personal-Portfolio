@@ -14,6 +14,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
   <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
   <!--build:css css/styles.min.css-->
   <link rel="stylesheet" href="./css/styles.css">
   <!--endbuild-->
@@ -33,11 +34,11 @@
       <h4 id="career">Full Stack Developer</h4>
       <section class="container">
     <div id="cube">
-      <figure class="front devicons devicons-sass"></figure>
+      <figure class="front devicon-react-original"></figure>
       <figure class="back devicons devicons-nodejs"></figure>
       <figure class="right devicons devicons-mongodb"></figure>
       <figure class="left devicons devicons-postgresql"></figure>
-      <figure class="top devicon-react-original"></figure>
+      <figure class="top devicons devicons-sass"></figure>
       <figure class="bottom devicons devicons-javascript_shield"></figure>
     </div>
   </section>
@@ -51,6 +52,14 @@
     <img id="my-pic" src="https://raw.githubusercontent.com/StephanieDover/Personal-Portfolio/master/app/images/me.jpg"/>
   </div>
   <div id="skills">
+    <div id="skills-background"></div>
+    <h1>Technical Skills</h1>
+    <ul id="chart">
+    <li><canvas id="myChartMongo"></canvas><p>Mongo</p></li>
+    <li><canvas id="myChartExpress"></canvas><p>Express</p></li>
+    <li><canvas id="myChartReact"></canvas><p>React</p></li>
+    <li><canvas id="myChartNode"></canvas><p>Node</p></li>
+  </ul>
     <ul id="skills-list">
       <li>JavaScript</li>
       <li>React</li>
@@ -71,7 +80,7 @@
       <li>HTML5</li>
       <li>Object Oriented Programming</li>
     </ul>
-  </div>
+</div>
   </div>
   <script>
   let $cube = $('#cube')
@@ -104,6 +113,136 @@ $('.right').on('mouseover', () => {
   console.log('mouseover event triggered')
   $cube.removeClass()
   $cube.toggleClass('show-front')
+})
+</script>
+<script>
+var ctx = document.getElementById('myChartExpress').getContext('2d')
+var ctxNode = document.getElementById('myChartNode').getContext('2d')
+var ctxReact = document.getElementById('myChartReact').getContext('2d')
+var ctxMongo = document.getElementById('myChartMongo').getContext('2d')
+var chart = new Chart(ctx, {
+  type: 'doughnut',
+
+  data: {
+    datasets: [
+      {
+        data: [90, 10],
+        backgroundColor: ['rgba(5, 1, 0, 1)', 'rgba(0, 0, 0, 0)'],
+        borderColor: ['rgba(5, 1, 0, 1)', 'rgba(0, 0, 0, 0)'],
+      },
+    ],
+    labels: ['Express', 'always more to learn'],
+  },
+  options: {
+    title: {
+      display: false,
+      position: 'bottom',
+      fontSize: 30,
+      fontColor: '#fff',
+      text: 'Express',
+    },
+    legend: { display: false },
+    cutoutPercentage: 70,
+    rotation: -0.5,
+    responsive: true,
+    maintainAspectRatio: false,
+    animation: {
+      animateRotate: true,
+    },
+  },
+})
+var chartNode = new Chart(ctxNode, {
+  type: 'doughnut',
+
+  data: {
+    datasets: [
+      {
+        data: [90, 10],
+        backgroundColor: ['rgba(30,10,0,1)', 'rgba(0, 0, 0, 0)'],
+        borderColor: ['rgba(30,10,0,1)', 'rgba(0, 0, 0, 0)'],
+      },
+    ],
+    labels: ['Node', 'always more to learn'],
+  },
+  options: {
+    title: {
+      display: false,
+      position: 'bottom',
+      fontSize: 30,
+      fontColor: '#fff',
+      text: 'Node',
+    },
+    legend: { display: false },
+    cutoutPercentage: 70,
+    rotation: -0.5,
+    responsive: true,
+    maintainAspectRatio: false,
+    animation: {
+      animateRotate: true,
+    },
+  },
+})
+var chartReact = new Chart(ctxReact, {
+  type: 'doughnut',
+
+  data: {
+    datasets: [
+      {
+        data: [90, 10],
+        backgroundColor: ['rgba(255,255,255,1)', 'rgba(0, 0, 0, 0)'],
+        borderColor: ['rgba(255,255,255,1)', 'rgba(0, 0, 0, 0)'],
+      },
+    ],
+    labels: ['React', 'always more to learn'],
+  },
+  options: {
+    title: {
+      display: false,
+      position: 'bottom',
+      fontSize: 30,
+      fontColor: '#fff',
+      text: 'React',
+    },
+    legend: { display: false },
+    cutoutPercentage: 70,
+    rotation: -0.5,
+    responsive: true,
+    maintainAspectRatio: false,
+    animation: {
+      animateRotate: true,
+    },
+  },
+})
+var chartMongo = new Chart(ctxMongo, {
+  type: 'doughnut',
+
+  data: {
+    datasets: [
+      {
+        data: [90, 10],
+        backgroundColor: ['rgba(88,2,1,1)', 'rgba(0, 0, 0, 0)'],
+        borderColor: ['rgba(88,2,1,1)', 'rgba(0, 0, 0, 0)'],
+      },
+    ],
+    labels: ['Mongo', 'always more to learn'],
+  },
+  options: {
+    title: {
+      display: false,
+      position: 'bottom',
+      fontSize: 30,
+      fontColor: '#fff',
+      text: 'Mongo',
+    },
+    legend: { display: false },
+    cutoutPercentage: 70,
+    rotation: -0.5,
+    responsive: true,
+    maintainAspectRatio: false,
+    animation: {
+      animateRotate: true,
+    },
+  },
 })
 </script>
 </body>
