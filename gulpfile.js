@@ -1,17 +1,17 @@
-const gulp = require('gulp');
-const sass = require('gulp-sass');
-const browserSync = require('browser-sync');
-const uglify = require('gulp-uglify');
-const gulpIf = require('gulp-if');
-const cssnano = require('gulp-cssnano');
-const imagemin = require('gulp-imagemin');
-const cache = require('gulp-cache');
-const del = require('del');
-const runSequence = require('run-sequence');
+const gulp = require('gulp')
+const sass = require('gulp-sass')
+const browserSync = require('browser-sync')
+const uglify = require('gulp-uglify')
+const gulpIf = require('gulp-if')
+const cssnano = require('gulp-cssnano')
+const imagemin = require('gulp-imagemin')
+const cache = require('gulp-cache')
+const del = require('del')
+const runSequence = require('run-sequence')
 
 gulp.task('hello', function() {
-  console.log('Hello Zell');
-});
+  console.log('Hello Zell')
+})
 
 gulp.task('sass', function() {
   return gulp
@@ -20,24 +20,24 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('app/css'))
     .pipe(
       browserSync.reload({
-        stream: true
+        stream: true,
       })
-    );
-});
+    )
+})
 
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
-      baseDir: 'app'
-    }
-  });
-});
+      baseDir: 'app',
+    },
+  })
+})
 
 gulp.task('watch', ['browserSync', 'sass'], function() {
-  gulp.watch('app/scss/**/*.scss', ['sass']);
-  gulp.watch('app/*.html', browserSync.reload);
-  gulp.watch('app/js/**/*.js', browserSync.reload);
-});
+  gulp.watch('app/scss/**/*.scss', ['sass'])
+  gulp.watch('app/*.html', browserSync.reload)
+  gulp.watch('app/js/**/*.js', browserSync.reload)
+})
 
 gulp.task('useref', function() {
   return gulp
@@ -45,8 +45,8 @@ gulp.task('useref', function() {
     .pipe(useref())
     .pipe(gulpIf('*.js', uglify()))
     .pipe(gulpIf('*.css', cssnano()))
-    .pipe(gulp.dest('dist'));
-});
+    .pipe(gulp.dest('dist'))
+})
 
 gulp.task('images', function() {
   return gulp
@@ -54,25 +54,25 @@ gulp.task('images', function() {
     .pipe(
       cache(
         imagemin({
-          interlaced: true
+          interlaced: true,
         })
       )
     )
-    .pipe(gulp.dest('dist/images'));
-});
+    .pipe(gulp.dest('dist/images'))
+})
 
 gulp.task('fonts', function() {
-  return gulp.src('app/fonts/**/*').pipe(gulp.dest('dist/fonts'));
-});
+  return gulp.src('app/fonts/**/*').pipe(gulp.dest('dist/fonts'))
+})
 
 gulp.task('clean:dist', function() {
-  return del.sync('dist');
-});
+  return del.sync('dist')
+})
 
 gulp.task('build', function(callback) {
-  runSequence('clean:dist', ['sass', 'useref', 'images', 'fonts'], callback);
-});
+  runSequence('clean:dist', ['sass', 'useref', 'images', 'fonts'], callback)
+})
 
 gulp.task('default', function(callback) {
-  runSequence(['sass', 'browserSync', 'watch'], callback);
-});
+  runSequence(['sass', 'browserSync', 'watch'], callback)
+})
