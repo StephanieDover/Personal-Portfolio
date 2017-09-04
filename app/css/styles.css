@@ -162,15 +162,42 @@ body,
   margin-top: 1em; }
 
 #about {
-  background-color: #fff;
-  height: 50%; }
+  background-color: #120400;
+  height: 50%;
+  color: white; }
+
+#about-me {
+  padding-top: 4em;
+  width: 50%;
+  height: auto;
+  display: inline-block; }
+
+#about-me p {
+  font-size: 1.2em;
+  display: inline;
+  position: relative;
+  right: 5%;
+  float: left;
+  margin-left: 4em; }
+
+#about-me h1 {
+  font-size: 2em;
+  display: inline;
+  position: relative;
+  right: 5%;
+  float: left;
+  margin-left: 4em; }
 
 #my-pic {
+  position: relative;
+  display: inline;
   font-family: "Libre Baskerville", serifs;
-  height: 60%;
+  height: 70%;
   border-radius: 50%;
   float: right;
-  box-shadow: 5px 5px 5px #888888; }
+  margin-right: 4em;
+  margin-top: 4em;
+  box-shadow: 5px 5px 5px #000; }
 
 .container {
   width: 200px;
