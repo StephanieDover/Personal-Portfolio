@@ -178,19 +178,20 @@ body,
 }
 
 #about-me {
-  padding-top: 4em;
+  padding-top: 7%;
+  margin-left: 8em;
   width: 50%;
   height: auto;
   display: inline-block;
 }
 
 #about-me p {
+  margin-top: 1em;
   font-size: 1.2em;
   display: inline;
   position: relative;
   right: 5%;
   float: left;
-  margin-left: 4em;
 }
 
 #about-me h1 {
@@ -199,8 +200,8 @@ body,
   position: relative;
   right: 5%;
   float: left;
-  margin-left: 4em;
 }
+
 #my-pic {
   position: relative;
   display: inline;
