@@ -1,7 +1,6 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
-const browserSync = require('browser-sync').create();
-const useref = require('gulp-useref');
+const browserSync = require('browser-sync');
 const uglify = require('gulp-uglify');
 const gulpIf = require('gulp-if');
 const cssnano = require('gulp-cssnano');
@@ -26,18 +25,18 @@ gulp.task('sass', function() {
     );
 });
 
-gulp.task('watch', ['browserSync', 'sass'], function() {
-  gulp.watch('app/scss/**/*.scss', ['sass']);
-  gulp.watch('app/*.html', browserSync.reload);
-  gulp.watch('app/js/**/*.js', browserSync.reload);
-});
-
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
       baseDir: 'app'
     }
   });
+});
+
+gulp.task('watch', ['browserSync', 'sass'], function() {
+  gulp.watch('app/scss/**/*.scss', ['sass']);
+  gulp.watch('app/*.html', browserSync.reload);
+  gulp.watch('app/js/**/*.js', browserSync.reload);
 });
 
 gulp.task('useref', function() {

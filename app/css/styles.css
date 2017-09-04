@@ -126,15 +126,41 @@ html,
 body,
 #app {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box; }
 
 #intro {
-  background-image: url("https://raw.githubusercontent.com/StephanieDover/Personal-Portfolio/master/src/assets/hero2.png");
   width: 100%;
-  height: 80%;
+  height: 100%;
+  background-color: black; }
+
+#header-background {
+  background-image: url("https://raw.githubusercontent.com/StephanieDover/Personal-Portfolio/master/app/images/hero2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%; }
+
+#header {
+  position: fixed;
+  top: 35%;
+  left: 35%; }
+
+#name {
   font-size: 4em;
   text-align: center;
   color: white; }
 
-#header {
-  padding-top: 4em; }
+#career {
+  font-size: 2.5em;
+  text-align: center;
+  color: white;
+  margin-top: 1em; }
+
+#about {
+  background-color: #fcfae1;
+  height: 25%; }
