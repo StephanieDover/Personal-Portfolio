@@ -9,7 +9,6 @@
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
@@ -27,69 +26,69 @@
 <body>
   <div id="app">
     <div id='intro'>
-    <div id="header-background">
+      <div id="header-background">
+      </div>
+      <header id="header">
+        <h1 id="name">Stephanie Dover</h1>
+        <h4 id="career">Full Stack Developer</h4>
+        <section class="container">
+      <div id="cube">
+        <figure class="front devicon-react-original"></figure>
+        <figure class="back devicons devicons-nodejs"></figure>
+        <figure class="right devicons devicons-mongodb"></figure>
+        <figure class="left devicons devicons-postgresql"></figure>
+        <figure class="top devicons devicons-sass"></figure>
+        <figure class="bottom devicons devicons-javascript_shield"></figure>
+      </div>
+    </section>
+      </header>
     </div>
-    <header id="header">
-      <h1 id="name">Stephanie Dover</h1>
-      <h4 id="career">Full Stack Developer</h4>
-      <section class="container">
-    <div id="cube">
-      <figure class="front devicon-react-original"></figure>
-      <figure class="back devicons devicons-nodejs"></figure>
-      <figure class="right devicons devicons-mongodb"></figure>
-      <figure class="left devicons devicons-postgresql"></figure>
-      <figure class="top devicons devicons-sass"></figure>
-      <figure class="bottom devicons devicons-javascript_shield"></figure>
+    <div id='about'>
+      <div id="about-me">
+        <h1>Hi, I'm Stephanie</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
-  </section>
-    </header>
-  </div>
-  <div id='about'>
-    <div id="about-me">
-      <h1>Hi, I'm Stephanie</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-    <img id="my-pic" src="https://raw.githubusercontent.com/StephanieDover/Personal-Portfolio/master/app/images/me.jpg"/>
-  </div>
-  <div id="skills">
-    <div id="skills-background"></div>
-    <h1>Technical Skills</h1>
-    <ul id="chart">
-    <li><canvas id="myChartMongo"></canvas><p>Mongo</p></li>
-    <li><canvas id="myChartExpress"></canvas><p>Express</p></li>
-    <li><canvas id="myChartReact"></canvas><p>React</p></li>
-    <li><canvas id="myChartNode"></canvas><p>Node</p></li>
-  </ul>
-    <ul id="skills-list">
-      <h1>Front End</h1>
-      <li>JavaScript</li>
+      <img id="my-pic" src="https://raw.githubusercontent.com/StephanieDover/Personal-Portfolio/master/app/images/me.jpg"/>
+    </div>
+    <div id="skills">
+      <div id="skills-background"></div>
+      <h1>Technical Skills</h1>
+      <ul id="chart">
+      <li><canvas id="myChartMongo"></canvas><p>Mongo</p></li>
+      <li><canvas id="myChartExpress"></canvas><p>Express</p></li>
+      <li><canvas id="myChartReact"></canvas><p>React</p></li>
+      <li><canvas id="myChartNode"></canvas><p>Node</p></li>
+    </ul>
+    <div class="clear-fix"></div>
+      <ul class="col firstcol">
+      <h3>Front End</h3>
       <li>React</li>
       <li>Redux</li>
       <li>SCSS/SASS</li>
       <li>jQuery</li>
       <li>HTML5</li>
     </ul>
-    <ul>
-      <h1>Back End</h1>
-      <li>Express</li>
-      <li>MongoDB(Mongoose)</li>
-      <li>PostgreSQL</li>
-      <li>Mocha</li>
-      <li>Node</li>
-    </ul>
-    <ul>
-      <h1>Styling</h1>
-      <li>SCSS/SASS</li>
-      <li>CSS3</li>
-      <li>Material-Ui</li>
-    </ul>
-    <ul>
-      <h1>Other</h1>
-      <li>Functional Programming</li>
-      <li>Object Oriented Programming</li>
-      <li>Test Driven Development</li>
-    </ul>
-</div>
+      <ul class="col">
+        <h3>Back End</h3>
+        <li>Express</li>
+        <li>MongoDB(Mongoose)</li>
+        <li>PostgreSQL</li>
+        <li>Mocha</li>
+        <li>Node</li>
+      </ul>
+      <ul class="col">
+        <h3>Styling</h3>
+        <li>SCSS/SASS</li>
+        <li>CSS3</li>
+        <li>Material-Ui</li>
+      </ul>
+      <ul class="col">
+        <h3>Other</h3>
+        <li>Functional Programming</li>
+        <li>Object Oriented Programming</li>
+        <li>Test Driven Development</li>
+      </ul>
+  </div>
   </div>
   <script>
   let $cube = $('#cube')

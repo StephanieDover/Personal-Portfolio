@@ -131,6 +131,9 @@ body,
   box-sizing: border-box;
   background-color: black; }
 
+* {
+  width: 100%; }
+
 #intro {
   width: 100%;
   height: 100%; }
@@ -147,10 +150,11 @@ body,
 
 #header {
   position: absolute;
-  top: 35%;
-  left: 30%; }
+  width: 100%;
+  top: 35%; }
 
 #name {
+  width: 100%;
   font-size: 4em;
   text-align: center;
   color: white; }
@@ -162,11 +166,14 @@ body,
   margin-top: 1em; }
 
 #about {
+  position: relative;
   background-color: #120400;
-  height: 50%;
+  width: 100%;
+  height: auto;
   color: white; }
 
 #about-me {
+  position: relative;
   padding-top: 7%;
   margin-left: 8em;
   width: 50%;
@@ -175,6 +182,7 @@ body,
 
 #about-me p {
   margin-top: 1em;
+  margin-bottom: 10em;
   font-size: 1.2em;
   display: inline;
   position: relative;
@@ -189,37 +197,29 @@ body,
   float: left; }
 
 #my-pic {
-  position: relative;
+  position: absolute;
   display: inline;
   font-family: "Libre Baskerville", serifs;
-  height: 70%;
+  width: 25%;
+  height: auto;
   border-radius: 50%;
   float: right;
-  margin-right: 4em;
+  left: 65%;
   margin-top: 4em;
+  margin-bottom: 4em;
   box-shadow: 5px 5px 5px #000; }
-
-#skills {
-  background-image: url("https://raw.githubusercontent.com/StephanieDover/Personal-Portfolio/master/app/images/trees.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 1;
-  width: 100%;
-  height: 100%;
-  color: white; }
 
 .container {
   width: 200px;
   height: 200px;
   position: relative;
-  perspective: 1000px; }
+  perspective: 1000px;
+  margin-top: 5%;
+  margin-left: 42%; }
 
 #cube {
   width: 100%;
   height: 100%;
-  margin-top: 3.5em;
   position: absolute;
   transform-style: preserve-3d;
   transition: transform 1s; }
@@ -271,19 +271,41 @@ body,
 #cube.show-bottom {
   transform: translateZ(-100px) rotateX(90deg); }
 
+#skills {
+  background-image: url("https://raw.githubusercontent.com/StephanieDover/Personal-Portfolio/master/app/images/trees.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  color: white;
+  position: absolute; }
+
 #skills ul {
   display: inline-block;
+  width: 100%;
   float: left;
   margin-top: 1em;
   font-size: 1.2em;
-  color: #000;
-  padding: 1.5em; }
+  color: white; }
 
-#skills ul h1 {
+#skills .col {
+  display: inline-block;
+  width: calc(90%/4);
+  float: left;
+  margin-top: 1em;
+  margin-bottom: 4em;
+  font-size: 1.2em;
+  color: white; }
+
+.firstcol {
+  padding-left: 5em; }
+
+#skills ul h3 {
   font-size: 1.7em; }
 
 #skills ul li {
-  padding: 1em;
+  padding-top: 1em;
   color: white; }
 
 #skills h1 {
@@ -295,10 +317,17 @@ body,
 #skills-list {
   margin-left: 10%; }
 
+#chart {
+  width: 100%;
+  height: 5%; }
+
 #chart li {
-  display: inline;
+  width: calc(100%/4);
+  padding: 1em;
+  margin-bottom: 5%;
+  height: auto;
+  display: inline-block;
   float: left;
-  padding: 0.5em;
   height: 210px !important;
   width: auto !important; }
 
