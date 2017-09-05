@@ -356,3 +356,10 @@ body,
   margin-top: 0.5em;
   text-align: center;
 }
+#portfolio {
+  width: 100%;
+  height: auto;
+}
+.col-3 {
+  width: calc(90%/3);
+}
