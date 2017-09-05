@@ -134,6 +134,9 @@ body,
 * {
   width: 100%; }
 
+.clear-fix {
+  clear: both; }
+
 #intro {
   width: 100%;
   height: 100%; }
@@ -190,6 +193,7 @@ body,
   float: left; }
 
 #about-me h1 {
+  padding-top: 4em;
   font-size: 2em;
   display: inline;
   position: relative;
@@ -278,6 +282,7 @@ body,
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 1;
+  width: 100%;
   color: white;
   position: absolute; }
 
@@ -285,7 +290,7 @@ body,
   display: inline-block;
   width: 100%;
   float: left;
-  margin-top: 1em;
+  margin-top: 2em;
   font-size: 1.2em;
   color: white; }
 
@@ -294,7 +299,7 @@ body,
   width: calc(90%/4);
   float: left;
   margin-top: 1em;
-  margin-bottom: 4em;
+  margin-bottom: 6em;
   font-size: 1.2em;
   color: white; }
 
