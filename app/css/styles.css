@@ -464,12 +464,24 @@ p {
   text-decoration: none; }
 
 #contact p {
-  margin-top: 13em;
+  margin-top: 7em;
   text-align: center;
   font-size: 0.7em !important; }
 
 #contact ul {
   margin-bottom: 1em; }
+
+#contact i {
+  font-size: 6em !important;
+  text-align: center;
+  margin-bottom: 0.5em;
+  color: white; }
+
+#calendly {
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+  margin-bottom: 2em; }
 
 #contact li {
   padding: 1em;
@@ -516,7 +528,12 @@ p {
   #about-me button {
     width: 40%; }
   #about-me h1 {
-    margin-top: 6em; } }
+    margin-top: 6em; }
+  #contact li {
+    display: block !important;
+    margin-left: 30%; }
+  #contact .fa-linkedin-square {
+    margin-left: 30%; } }
 
 @media only screen and (min-width: 501px) and (max-width: 600px) {
   #chart li {
@@ -556,7 +573,12 @@ p {
   #about-me button {
     width: 40%; }
   #about-me h1 {
-    margin-top: 6em; } }
+    margin-top: 6em; }
+  #contact li {
+    display: block !important;
+    margin-left: 35%; }
+  #contact .fa-linkedin-square {
+    margin-left: 35%; } }
 
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
   #chart li {
@@ -589,7 +611,9 @@ p {
   #about-me button {
     width: 40%; }
   #about-me h1 {
-    margin-top: 4em; } }
+    margin-top: 4em; }
+  #contact .fa-linkedin-square {
+    margin-left: 15%; } }
 
 @media only screen and (min-width: 1001px) and (max-width: 1200px) {
   #chart li {
@@ -597,7 +621,9 @@ p {
   #my-pic {
     left: 65%;
     top: 10%;
-    width: 25%; } }
+    width: 25%; }
+  #contact .fa-linkedin-square {
+    margin-left: 25%; } }
 
 @media only screen and (min-width: 1201px) and (max-width: 1350px) {
   .container {
