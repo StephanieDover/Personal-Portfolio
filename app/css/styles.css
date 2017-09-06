@@ -453,6 +453,32 @@ p {
 .project-description a {
   text-decoration: none; }
 
+#contact {
+  background-image: url(https://raw.githubusercontent.com/StephanieDover/Personal-Portfolio/master/app/images/contact.jpg);
+  width: 100%; }
+
+#contact h1 {
+  margin-bottom: 2em; }
+
+#contact a {
+  text-decoration: none; }
+
+#contact p {
+  margin-top: 13em;
+  text-align: center;
+  font-size: 0.7em !important; }
+
+#contact ul {
+  margin-bottom: 1em; }
+
+#contact li {
+  padding: 1em;
+  display: inline !important;
+  font-size: 3em; }
+
+#contact .fa-linkedin-square {
+  margin-left: 32%; }
+
 @media only screen and (max-width: 500px) {
   #chart li {
     display: none; }
