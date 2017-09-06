@@ -437,6 +437,7 @@ p {
 .project-description a {
   text-decoration: none;
 }
+
 @media only screen and (max-width: 500px) {
   #chart li {
     display: block;
@@ -462,6 +463,26 @@ p {
   }
   #about-me {
     padding-top: 40%;
+  }
+  .project-image {
+    margin-left: 0;
+    display: block;
+    width: 100%;
+    box-shadow: 5px 5px 5px #000;
+  }
+  .project-description {
+    margin-left: 5%;
+    display: block;
+    width: 80%;
+    float: left;
+    margin-top: 2%;
+    margin-right: 4%;
+  }
+  .project-description button {
+    width: 20%;
+  }
+  .hide {
+    display: none !important;
   }
 }
 @media only screen and (min-width: 501px) and (max-width: 600px) {
@@ -492,6 +513,23 @@ p {
   #about-me {
     padding-top: 40%;
   }
+  .project-image {
+    margin-left: 0;
+    display: block;
+    width: 100%;
+    box-shadow: 5px 5px 5px #000;
+  }
+  .project-description {
+    margin-left: 5%;
+    display: block;
+    width: 80%;
+    float: left;
+    margin-top: 2%;
+    margin-right: 4%;
+  }
+  .project-description button {
+    width: 20%;
+  }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
@@ -514,6 +552,20 @@ p {
   }
   .container {
     margin-left: 37%;
+  }
+  .project-image {
+    margin-left: 0;
+    display: block;
+    width: 100%;
+    box-shadow: 5px 5px 5px #000;
+  }
+  .project-description {
+    margin-left: 5%;
+    display: block;
+    width: 80%;
+    float: left;
+    margin-top: 2%;
+    margin-right: 4%;
   }
 }
 @media only screen and (min-width: 1001px) and (max-width: 1200px) {
